@@ -1,0 +1,6 @@
+2024-06-09 08:28:34,836 [kline_hour_sol] [INFO]: 2024-06-08 22:00:00 -- 2024-06-09 08:00:00 --> kline_hour_sol
+2024-06-09 08:28:34,847 [kline_hour_sol] [INFO]: sleep 0.40 s
+2024-06-09 10:16:33,553 [kline_hour_sol] [INFO]: 2024-06-09 08:00:00 -- 2024-06-09 10:16:00 --> kline_hour_sol
+2024-06-09 10:16:33,553 [kline_hour_sol] [INFO]: sleep 0.44 s
+2024-06-09 14:17:15,033 [kline_hour_sol] [INFO]: 2024-06-09 06:00:00 -- 2024-06-09 14:00:00 --> kline_hour_sol
+2024-06-09 14:17:15,033 [kline_hour_sol] [INFO]: sleep 0.39 s

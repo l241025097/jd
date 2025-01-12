@@ -1,0 +1,6 @@
+2024-04-21 09:57:16,468 [cfx_earn_20240421] [INFO]: ---------------------------------start: 2024-04-21 09:57:16.468202----------------------------------
+2024-04-21 09:57:17,658 [cfx_earn_20240421] [INFO]: {'exchange_base': 'USD', 'exchange_quote': 'CNY', 'exchange_rate': 7.25, 'update_time': datetime.datetime(2024, 4, 21, 8, 0, 2)}
+2024-04-21 09:57:18,902 [cfx_earn_20240421] [INFO]: {'actual_hash_rate': 345.82, 'unit': 'MH/s', 'update_time': datetime.datetime(2024, 4, 21, 9, 57, 18, 902463)}
+2024-04-21 09:57:19,287 [cfx_earn_20240421] [INFO]: {'currency_pair': 'CFX_USDT', 'last': '0.25581', 'change_percentage': '-0.7', 'base_volume': '54569455.551343', 'quote_volume': '13566442.816876', 'high_24h': '0.26016', 'low_24h': '0.2357', 'update_time': datetime.datetime(2024, 4, 21, 9, 57, 19, 287195)}
+2024-04-21 09:57:20,071 [cfx_earn_20240421] [INFO]: {'earn_per_hour_per_hash': 0.0014742053746569874, 'avg_currency_price': 0.24860872588533858, 'earn_per_day_CNY': 0.6489622264120712}
+2024-04-21 09:57:20,087 [cfx_earn_20240421] [INFO]: -------------------------end: 2024-04-21 09:57:20.087103, duration: 3.62 s--------------------------

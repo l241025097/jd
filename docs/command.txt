@@ -1,0 +1,6 @@
+echo "passwd" | docker secret create my_passwd -
+docker run --secret my_passwd
+
+docker run -d --rm --name rich -v /root/projects/jd/datas:/home/jd/src/datas -p 60000:5000 l241025097/python_rich:3.8.0
+
+docker run -d --rm --name mysql -v /root/projects/jd/datas/database:/var/lib/mysql -p 60001:3306 -e MYSQL_ROOT_PASSWORD=luoyl25@15676192675 -e MYSQL_USER=lyn -e MYSQL_PASSWORD=S198641cn@ mysql:5.7.44

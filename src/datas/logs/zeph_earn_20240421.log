@@ -1,0 +1,6 @@
+2024-04-21 09:57:25,281 [zeph_earn_20240421] [INFO]: ---------------------------------start: 2024-04-21 09:57:25.271941----------------------------------
+2024-04-21 09:57:26,474 [zeph_earn_20240421] [INFO]: {'exchange_base': 'USD', 'exchange_quote': 'CNY', 'exchange_rate': 7.25, 'update_time': datetime.datetime(2024, 4, 21, 8, 0, 2)}
+2024-04-21 09:57:27,771 [zeph_earn_20240421] [INFO]: {'actual_hash_rate': 15963.96, 'unit': 'H/s', 'update_time': datetime.datetime(2024, 4, 21, 9, 57, 27, 771135)}
+2024-04-21 09:57:29,258 [zeph_earn_20240421] [INFO]: {'symbol': 'ZEPH-USDT', 'lastPrice': 9.955, 'priceYesterday': 9.55746, 'high': 10, 'low': 9.272, 'volume': 1029.738255363094}
+2024-04-21 09:57:30,104 [zeph_earn_20240421] [INFO]: {'earn_per_hour_per_hash': 1.1391741911575621e-07, 'avg_currency_price': 9.55746, 'earn_per_day_CNY': -0.3848373317318331}
+2024-04-21 09:57:30,113 [zeph_earn_20240421] [INFO]: -------------------------end: 2024-04-21 09:57:30.113229, duration: 4.84 s--------------------------
