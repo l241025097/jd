@@ -16,8 +16,8 @@ from utils import get_log, connect_mysql, get_insert_sql, modify_fly_many
 def mysql_engine(host="101.33.240.185", port=60001, user="lyn", passwd="S198641cn@", db="rich"):
     return create_engine(f"mysql+pymysql://{user}:{quote(passwd)}@{host}:{port}/{db}")
 
-def get_kline_minute(currency, currency_begin_time, col_dict, log_obj):
-    table_name = f"kline_minute_{currency}"
+def get_kline_minute(currency, currency_begin_time, freq, col_dict, log_obj):
+    table_name = f"kline_minute{freq}_{currency}"
     judage_loop = True
     while judage_loop:
         loop_begin = time()
@@ -28,7 +28,7 @@ def get_kline_minute(currency, currency_begin_time, col_dict, log_obj):
         if max_time_int is not None:
             max_time_obj = datetime.fromtimestamp(max_time_int / 1000)
             currency_begin_time = max_time_obj
-        time_se = pd.date_range(start=currency_begin_time, periods=1900, freq="15min").to_series()
+        time_se = pd.date_range(start=currency_begin_time, periods=1900, freq=f"{freq}T").to_series()
         currency_end_time = time_se.max()
         end_time_obj = datetime.now().replace(second=0, microsecond=0)
         if currency_end_time > end_time_obj:
@@ -36,7 +36,7 @@ def get_kline_minute(currency, currency_begin_time, col_dict, log_obj):
             judage_loop = False
         currency_begin_int = int(currency_begin_time.timestamp() * 1000)
         currency_end_int = int(currency_end_time.timestamp() * 1000)
-        name, data = get_kline(f"gate-io_{currency}_USDT", currency_begin_int, currency_end_int, "15m")
+        name, data = get_kline(f"gate-io_{currency}_USDT", currency_begin_int, currency_end_int, f"{freq}m")
         df = pd.DataFrame(data).rename(columns={key: col_dict[key]["en_name"] for key in col_dict.keys()})
         dbh ,sth = connect_mysql()
         try:

@@ -1,5 +1,5 @@
-# docker build -t l241025097/python:3.8.0 -f Dockerfile.base .
-FROM python:3.8
+# docker build --platform linux/amd64 -t l241025097/python:3.8.0 -f Dockerfile.base .
+FROM dockerpull.cn/python:3.8
 RUN apt-get clean && apt-get install -y apt-transport-https
 RUN apt-get update && apt-get install -y git
 RUN apt-get install -y wget
@@ -24,7 +24,7 @@ RUN mkdir -p /home/jd
 RUN python -m pip install --upgrade pip
 RUN pip install ddddocr==1.4.7 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install gate-api==4.70.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install greenlet==2.0.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install greenlet==3.1.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install lxml==4.9.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install cssselect==1.2.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install matplotlib==3.7.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -42,5 +42,5 @@ RUN pip install xlsxwriter==3.0.3 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install xlrd==2.0.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install flask==2.0.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install Werkzeug==2.2.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip install gevent==21.8.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install gevent==24.11.1 -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install pymysql==1.0.2 -i https://pypi.tuna.tsinghua.edu.cn/simple

@@ -29,9 +29,11 @@ PATH=${PATH}:/usr/local/bin:/usr/bin
 
 # 15 8 * * * /usr/local/bin/python /home/jd/src/miner/execute_cfx.py
 # 15 8 * * * /usr/local/bin/python /home/jd/src/miner/execute_zeph.py
-1 8 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_day_eth.py
-1 8 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_day_sol.py
-1 */1 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_hour_eth.py
-1 */1 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_hour_sol.py
-1,16,31,46 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute_eth.py
-1,16,31,46 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute_sol.py
+10 8 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_day_eth.py
+10 8 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_day_sol.py
+10 */1 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_hour_eth.py
+10 */1 * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_hour_sol.py
+*/1 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute5_eth.py
+*/1 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute5_sol.py
+*/5 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute15_eth.py
+*/5 * * * * /usr/local/bin/python /home/jd/src/mifengcha_api/execute_kline_minute15_sol.py

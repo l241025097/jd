@@ -12,9 +12,9 @@ from utils import get_log
 
 
 def execute():
-    currency = "sol"
-    app_name = f"kline_minute_{currency}"
-    currency_begin_time = datetime(2023, 6, 1)
+    currency = "eth"
+    app_name = f"kline_minute5_{currency}"
+    currency_begin_time = datetime(2018, 4, 1)
     log_obj = get_log(app_name)
     col_dict = {
         "T": {
@@ -48,7 +48,7 @@ def execute():
             "type": Float()
         }
     }
-    get_kline_minute(currency, currency_begin_time, col_dict, log_obj)
+    get_kline_minute(currency, currency_begin_time, "5", col_dict, log_obj)
 
 if __name__ == "__main__":
     execute()

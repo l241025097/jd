@@ -1,4 +1,4 @@
-# docker build -t l241025097/python_rich:3.8.0 .
+# docker build --platform linux/amd64 -t l241025097/python_rich:3.8.0 .
 FROM l241025097/python:3.8.0
 ADD src.tar /home/jd
 RUN cp /home/jd/src/crons/execute.cron /etc/cron.d/execute.cron
